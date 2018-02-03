@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'member.apps.MemberConfig',
+    'events.apps.EventsConfig',
     'groops.apps.GroopsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,7 +57,7 @@ ROOT_URLCONF = 'Groop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'groops/templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'member/templates')] #events to groops
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -79,9 +81,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'groops',
-        'USER': 'ceoBen',
-        'PASSWORD': '1mth3ce0$$$',
-        'HOST': 'localhost',
+        'USER': 'zachattack',
+        'PASSWORD': 'splooge',
+        'HOST': '169.234.119.9',
         'PORT': '47667',
     }
 }
