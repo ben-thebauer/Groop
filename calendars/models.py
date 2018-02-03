@@ -8,7 +8,7 @@ class Calendar(models.Model):
     day5 = models.CharField(max_length=300)
     day6 = models.CharField(max_length=300)
     day7 = models.CharField(max_length=300)
-
+    week2 = models.CharField(max_length = 600)
     #MAKE THIS A LIST WHY ISN'T IT WORKING
     def __str__(self):
         return self.day1
