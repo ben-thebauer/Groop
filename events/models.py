@@ -4,6 +4,7 @@ class Event(models.Model):
     description = models.CharField(max_length=500)
     #picture = models.ImageField()
     location = models.CharField(max_length = 100)
+    time = models.DateTimeField()
     host = models.CharField(max_length = 50)
     going = set()
     notGoing = set()
@@ -17,6 +18,8 @@ class Event(models.Model):
         return self.host
     def getDescription(self):
         return self.description
+    def getTime(self):
+        return self.time
 
     def getGoing(self):
         return self.going

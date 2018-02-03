@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include,path
 
 urlpatterns = [
+    path('calendar/',include('calendars.urls')),
     path('members/',include('member.urls')),
     path('events/',include('events.urls')),
     path('groops/', include('groops.urls')),
