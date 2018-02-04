@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Groop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'calendars/templates')] #events to groops
+        'DIRS': [os.path.join(BASE_DIR, 'groops/templates')] #events to groops
         ,
         'APP_DIRS': True,
         'OPTIONS': {

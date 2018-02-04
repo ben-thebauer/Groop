@@ -29,9 +29,9 @@ from django.db import models
 #     member_list = ListField()
 
 class Groop(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.CharField(max_length=500)
-    logo = models.FileField(upload_to="upload/")
+    name = models.CharField(default="",max_length=100)
+    description = models.CharField(default="",max_length=500)
+    logo = models.FileField(default="", upload_to="upload/")
     #members = models.ForeignKey(Members, on_delete=models.CASCADE)
     #website = models.URLField(max_length=200)
     #foreignkey schedule
