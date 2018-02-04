@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab|Open+Sans');
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+    text-align: center;
+    background-color: #6CABCC;
+    padding: 50px;
+    font-size: 50px;
+    margin: 80px;
+    border-radius: 15px;
+    
+}
+
+#info {
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+}
+
+
+#space {
+    background-color: black;
+}
+
+
+
+#rcorners {
+    border-radius: 15px;
+    background-position: right top;
+    background-repeat: repeat;
+    padding: 0px; 
+    width: 400px;
+    height: 300px; 
+    margin-top: -70px;
+    margin-left: 70px;
+    
+}
+
+#infocol{
+    background-color: #d1e0e0;
+    padding: 53px;
+    border-radius: 15px;
+    margin-top: -70px;
+    margin-left: -90px;
+}
+
+#infocoldescription{
+    background-color: #d1e0e0;
+    padding: 53px;
+    border-radius: 15px;
+    margin-top: -100px;
+    margin-left: -90px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#form{
+    text-align: center;
+    padding-bottom: 300px;
+    
+    
+}
+
+#roles{
+    text-align: center;
+    background-color: #7F939E;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 100px;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#google{
+    margin-left: -100px;
+    margin-top: -70px;
+}
+
+#people p {
+    text-align: left;
+    font-size: 16px;
+}

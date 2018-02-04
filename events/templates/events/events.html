@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body>
+        <div class="container">
+            <!-- can use "container-fluid" for resizing...but this messes it up-->
+            <div class="row">
+                <h2 id = "title"> Hacks at UCI </h2>
+                <div class="col-sm-6" > 
+                    <!--INSERT SPECIFIC EVENT PICTURE-->
+                    <img id = "rcorners" src="https://ncmedia.azureedge.net/ncmedia/2017/08/2017-Hackathon-Monday-0060.jpg" alt="event-pic" height = "300px" width = "400px" hspace="100" align = "left"> 
+                </div>
+                <div class="col-sm-6" id = "google"> 
+                    <!-- google api code starts here -->
+        			<div id="googleMap" style="width:105%; height:300px;"></div>
+        				<script>
+        					function myMap() {
+        						var myCenter = new google.maps.LatLng(34.053184, -118.244232);
+        						var mapCanvas = document.getElementById("googleMap");
+        						var mapOptions = {
+        							center: myCenter,
+        							zoom: 8
+        						};
+        						var map = new google.maps.Map(mapCanvas, mapOptions);
+        						var marker = new google.maps.Marker({
+        							position: myCenter
+        						});
+        						marker.setMap(map);
+        					}
+        				</script>
+        				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoskepWbY-OX1JUeC-9zeCS89HYLsve3s&callback=myMap"></script>
+                    </div>
+                    <!-- google api code ends here -->
+
+                </div>
+            <div class= "row" id = "infocol">
+                <div class = "col-sm-1">
+                    
+                </div>
+                <div class = "col-sm-5" id = "info">
+                    <!--SPECIFIC EVENT LOCATION-->
+                    <h2> <b>Location:</b> Pacific Ballroom </h2> 
+                </div>
+                <div class = "col-sm-5" id = "info">
+                    <!--SPECIFIC EVENT TIME-->
+                    <h2> <b>Time: </b> February 2nd at 10pm </h2>
+                </div>
+            </div>
+            <div class = "row" id = "infocoldescription">
+                <div class = "col-sm-1">
+                    
+                </div>
+                <div class = "col-sm-7">
+                    <h2> <b>Description: </b></h2>
+                <!--SPECIFIC EVENT DESCRIPTION-->
+                <h5>Lots of CS people gather and make cool things. </h5> 
+                </div>
+                
+            </div>
+            
+        </div>
+      <!-- <h1> Events</h1> -->
+
+      <!--<h2 id = "host" > Host </h2>-->
+      <div id = "roles">
+            <h2> Event Specifics </h2>
+            <!--SPECIFIC EVENT ROLES/JOBS-->
+            <p> Ben: drinks </p>
+            <p> Jacob: pretzels</p>
+            <p>Zach: snack eater </p>
+      </div>
+      
+      <div class = "row">
+          <div class = "col-sm-3">
+              
+          </div>
+          <div class = "col-sm-4" id = "form" >
+                <h3> <b> Wanna Contribute? </b></h3>
+                <form action="#">
+                  <b>Name </b> &nbsp; &nbsp; &nbsp;<input type="text" name="fname" ><br><br>
+                  <b>What Are You Bringing: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="lname" ><br><br>
+                  <b>Any Suggestions?: </b>&nbsp;&nbsp;&nbsp;&nbsp; <input type = "text" name = "lname" > <br><br>
+                  <input type="submit" value="Submit">
+                </form>
+           </div>
+           <div class = "col-sm-4"> 
+               <h2>Who's Going:</h2> 
+               <!--SPECIFIC EVENT ATTENDEES-->
+               <!--<p> {list of people going...guessing a for loop of some sorts}</p>-->
+                <div id = "people"> 
+                    <p>
+                        <a href="https://www.google.com">
+                            <img border="0" alt="google" src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="30" height="30">
+                        </a> &nbsp; Ben B. 
+                    </p>
+                    <p> 
+                        <a href="https://www.google.com">
+                            <img border="0" alt="google" src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="30" height="30">
+                        </a> &nbsp; Jacob S. 
+                    </p>
+                    <p> 
+                        <a href="https://www.google.com">
+                            <img border="0" alt="google" src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="30" height="30">
+                        </a> &nbsp; Shawn S. 
+                    </p>
+                    <p> 
+                        <a href="https://www.google.com">
+                            <img border="0" alt="google" src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="30" height="30">
+                        </a> &nbsp; Zach W. 
+                    </p>
+                    <p> 
+                        <a href="https://www.google.com">
+                            <img border="0" alt="google" src="https://www.sonypark360.net/wp-content/uploads/2017/08/profile-pictures.png" width="30" height="30">
+                        </a> &nbsp; Melany Y. </p>
+                    <p> .... </p>
+                </div>
+                
+            </div>
+           
+        </div>
+  </body>
