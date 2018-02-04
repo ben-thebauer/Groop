@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'Groop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'groops',
+        'NAME': 'groopdb',
         'USER': 'ceoBen',
         'PASSWORD': '1mth3ce0$$$',
         'HOST': 'localhost',
