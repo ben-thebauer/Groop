@@ -6,5 +6,5 @@ from .models import Event
 def splenda(request):
     template = loader.get_template('events/index.html')
     tempo = Event.objects.all()
-    context = {'groops' : Event.objects,'tempo':tempo}#can add objects to this dictionary and then pass them into method below to display on page
+    context = {'events' : Event.objects,'tempo':tempo}#can add objects to this dictionary and then pass them into method below to display on page
     return HttpResponse(template.render(context, request))

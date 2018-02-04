@@ -6,5 +6,5 @@ from .models import Calendar
 def index(request):
     template = loader.get_template('events/index.html')
     tempo = Calendar.objects.all()
-    context = {'groops' : Calendar.objects,'tempo':tempo}#can add objects to this dictionary and then pass them into method below to display on page
+    context = {'calendars' : Calendar.objects,'tempo':tempo}#can add objects to this dictionary and then pass them into method below to display on page
     return HttpResponse(template.render(context, request))

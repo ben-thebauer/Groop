@@ -58,7 +58,7 @@ ROOT_URLCONF = 'Groop.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'calendars/templates')] #events to groops
+        'DIRS': [os.path.join(BASE_DIR, 'groops/templates')] #events to groops
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -82,9 +82,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'groops',
-        'USER': 'zachattack',
-        'PASSWORD': 'splooge',
-        'HOST': '169.234.119.9',
+        'USER': 'ceoBen',
+        'PASSWORD': '1mth3ce0$$$',
+        'HOST': 'localhost',
         'PORT': '47667',
     }
 }

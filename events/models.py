@@ -1,10 +1,11 @@
+from django.utils import timezone
 from django.db import models
 class Event(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=500)
     #picture = models.ImageField()
     location = models.CharField(max_length = 100)
-    time = models.DateTimeField()
+    time = models.DateTimeField('event time', default=timezone.now)
     host = models.CharField(max_length = 50)
     going = set()
     notGoing = set()
