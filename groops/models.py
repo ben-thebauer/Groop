@@ -1,39 +1,15 @@
 from django.db import models
+from django_mysql.models import ListTextField
+
 #import ast
 # Create your models here.
-
-#class Members(models.Model):
-    #full_name = models.CharField(max_length=100)
-
-#
-# class ListField(models.TextField):
-#
-#     def __init__(self, *args, **kwargs):
-#         super(ListField, self).__init__(*args, **kwargs)
-#
-#     def to_python(self, value):
-#         if not value:
-#             value = []
-#
-#         if isinstance(value, list):
-#             return value
-#
-#         return ast.literal_eval(value)
-#
-#     def value_to_string(self, obj):
-#         value = self._get_val_from_obj(obj)
-#         return self.get_db_prep_value(value)
-#
-#
-# class Members(models.Model):
-#     member_list = ListField()
 
 class Groop(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=500)
-    logo = models.FileField(upload_to="upload/")
-    #members = models.ForeignKey(Members, on_delete=models.CASCADE)
-    #website = models.URLField(max_length=200)
+    logo = models.FileField(default="", upload_to="upload/")
+    #members = ListTextField(default=[], base_field=models.CharField(max_length=500))
+    new_members = ListTextField(default=[], base_field=models.CharField(max_length=500))
     #foreignkey schedule
     #foeignkey members
 
@@ -44,7 +20,7 @@ class Groop(models.Model):
         return "{0}".format(self.name)
 
     def __repr__(self):
-        return "Name: {0}\nDescription: {1}\nLogo: {2}".format(self.name,self.description, self.logo)
+        return "Name: {0}\nDescription: {1}\nLogo: {2}\nMembers:{3}".format(self.name,self.description, self.logo, self.new_members)
 
 
 
